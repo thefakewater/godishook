@@ -1,3 +1,3 @@
 module github.com/thefakewater/godishook
 
-go 1.16
+go 1.18
