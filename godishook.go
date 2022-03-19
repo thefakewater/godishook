@@ -184,6 +184,7 @@ func sendPayload(wh *Webhook, payload *Payload) error {
 func (wh *Webhook) Send(content string) error {
 	var payload Payload
 	initPayload(wh, &payload)
+	payload.Content = content
 	err := sendPayload(wh, &payload)
 	if err != nil {
 		return err
